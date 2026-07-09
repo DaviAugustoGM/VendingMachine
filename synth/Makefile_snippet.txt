@@ -1,0 +1,7 @@
+# Adicione estes alvos ao Makefile
+
+synth:
+	dc_shell -f synth/synth.tcl
+
+synth-sweep:
+	dc_shell -f synth/synth_sweep.tcl | tee synth/synth_sweep.log

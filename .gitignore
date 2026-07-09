@@ -1,0 +1,100 @@
+# ============================================================
+# VCS / Verdi / DVE
+# ============================================================
+
+simv
+simv.daidir/
+csrc/
+AN.DB/
+DVEfiles/
+work.lib++/
+alib-*/
+ucli.key
+*.key
+
+# Logs e arquivos temporários de simulação
+*.log
+.vlogan*
+novas*
+verdi*
+
+# NÃO ignorar waveforms, pois você quer subir:
+# *.fsdb
+# *.vcd
+# *.vpd
+
+
+# ============================================================
+# Synopsys Design Compiler
+# ============================================================
+
+work/
+synth/work/
+default.svf
+command.log
+filenames.log
+
+# NÃO ignorar reports, pois você quer subir:
+# synth/reports/*
+# synth/runs/*
+
+# Ignorar apenas resultados pesados/intermediários da síntese
+synth/results/*
+synth/runs/*/results/*
+*.ddc
+*.svf
+
+# Mantém pastas vazias versionadas
+!synth/results/.gitkeep
+
+
+# ============================================================
+# Bibliotecas de tecnologia / libs proprietárias
+# ============================================================
+
+libs/*
+synth/libs/*
+*.db
+*.lib
+*.sldb
+*.lef
+*.tf
+*.tluplus
+*.map
+
+# Mantém placeholders/README das pastas de libs
+!libs/.gitkeep
+!libs/README.md
+!synth/libs/.gitkeep
+!synth/libs/README.md
+!synth/libs/COLOQUE_A_BIBLIOTECA_AQUI.txt
+
+
+# ============================================================
+# Arquivos de backup / temporários
+# ============================================================
+
+*~
+*.bak
+*.tmp
+*.swp
+*.swo
+.#*
+#*#
+
+
+# ============================================================
+# Sistema operacional
+# ============================================================
+
+.DS_Store
+Thumbs.db
+
+
+# ============================================================
+# Editores / IDEs
+# ============================================================
+
+.vscode/
+.idea/
+*.code-workspace

@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : vending_top
+Version: X-2025.06-SP2
+Date   : Thu Jul  9 13:25:02 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /home/xmen-aluno/Downloads/grupo_NN_vending/synth/libs/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                           29
+Number of nets:                           394
+Number of cells:                          358
+Number of combinational cells:            293
+Number of sequential cells:                52
+Number of macros/black boxes:               0
+Number of buf/inv:                         62
+Number of references:                      37
+
+Combinational area:                657.978820
+Buf/Inv area:                       85.646529
+Noncombinational area:             355.801609
+Macro/Black Box area:                0.000000
+Net Interconnect area:             166.565331
+
+Total cell area:                  1013.780429
+Total area:                       1180.345760
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+vending_top                       1013.7804    100.0  657.9788   355.8016  0.0000  vending_top
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 657.9788   355.8016  0.0000
+
+1

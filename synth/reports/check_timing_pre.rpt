@@ -1,0 +1,45 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Changed wire load model for 'control_unit' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'subtractor' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'comparator' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'memory' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'credit_reg' from '(none)' to 'ForQA'. (OPT-170)
+Module: DW01_add_width8, Ports: 26, Input: 17, Output: 9, Inout: 0
+Module: DW01_add_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp2_width8, Ports: 20, Input: 18, Output: 2, Inout: 0
+Module: DW01_cmp2_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_dec_width8, Ports: 16, Input: 8, Output: 8, Inout: 0
+Module: DW01_dec_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_sub_width8, Ports: 26, Input: 17, Output: 9, Inout: 0
+Module: DW01_sub_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_1_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GT_UNS_OP_8_1_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+Warning: There are 7 input ports have no clock_relative delay specified, the command set_input_delay without -clock option will be ignored. (TIM-216)
+
+Information: Checking unconstrained_endpoints...
+
+Warning: There are 32 end-points which are not constrained for maximum delay.
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1

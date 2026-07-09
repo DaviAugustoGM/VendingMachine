@@ -1,0 +1,512 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : vending_top
+Version: X-2025.06-SP2
+Date   : Thu Jul  9 13:25:06 2026
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: sel_item[0]
+              (input port clocked by clk)
+  Endpoint: u_memory/mem_reg[2][5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_top        8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  sel_item[0] (in)                                        0.01       3.01 r
+  U272/Y (INVX0_RVT)                                      0.04       3.06 f
+  U273/Y (NOR2X0_RVT)                                     0.07       3.13 r
+  U276/Y (AO21X1_RVT)                                     0.06       3.19 r
+  U280/Y (OR3X1_RVT)                                      0.06       3.25 r
+  U298/Y (OR2X1_RVT)                                      0.06       3.31 r
+  U299/Y (OR2X1_RVT)                                      0.05       3.36 r
+  U300/Y (OR2X1_RVT)                                      0.05       3.41 r
+  U306/Y (NOR2X0_RVT)                                     0.07       3.48 f
+  U313/Y (AND2X1_RVT)                                     0.05       3.53 f
+  U315/Y (OR2X1_RVT)                                      0.05       3.57 f
+  U325/Y (OR2X1_RVT)                                      0.05       3.62 f
+  U326/Y (INVX0_RVT)                                      0.03       3.65 r
+  U327/Y (AND2X1_RVT)                                     0.04       3.69 r
+  U328/Y (NOR2X2_RVT)                                     0.07       3.75 f
+  U160/Y (OR2X2_RVT)                                      0.05       3.81 f
+  U355/Y (INVX1_RVT)                                      0.04       3.84 r
+  U368/Y (AO22X1_RVT)                                     0.06       3.90 r
+  u_memory/mem_reg[2][5]/D (DFFX1_RVT)                    0.01       3.91 r
+  data arrival time                                                  3.91
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.50       1.50
+  u_memory/mem_reg[2][5]/CLK (DFFX1_RVT)                  0.00       1.50 r
+  library setup time                                     -0.03       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -3.91
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.45
+
+
+  Startpoint: sel_item[0]
+              (input port clocked by clk)
+  Endpoint: u_memory/mem_reg[1][5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_top        8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  sel_item[0] (in)                                        0.01       3.01 r
+  U272/Y (INVX0_RVT)                                      0.04       3.06 f
+  U273/Y (NOR2X0_RVT)                                     0.07       3.13 r
+  U276/Y (AO21X1_RVT)                                     0.06       3.19 r
+  U280/Y (OR3X1_RVT)                                      0.06       3.25 r
+  U298/Y (OR2X1_RVT)                                      0.06       3.31 r
+  U299/Y (OR2X1_RVT)                                      0.05       3.36 r
+  U300/Y (OR2X1_RVT)                                      0.05       3.41 r
+  U306/Y (NOR2X0_RVT)                                     0.07       3.48 f
+  U313/Y (AND2X1_RVT)                                     0.05       3.53 f
+  U315/Y (OR2X1_RVT)                                      0.05       3.57 f
+  U316/Y (OR2X1_RVT)                                      0.05       3.62 f
+  U321/Y (INVX0_RVT)                                      0.03       3.65 r
+  U322/Y (AND2X1_RVT)                                     0.04       3.69 r
+  U323/Y (NOR2X2_RVT)                                     0.07       3.75 f
+  U161/Y (OR2X2_RVT)                                      0.05       3.81 f
+  U353/Y (INVX1_RVT)                                      0.04       3.84 r
+  U367/Y (AO22X1_RVT)                                     0.06       3.90 r
+  u_memory/mem_reg[1][5]/D (DFFX1_RVT)                    0.01       3.91 r
+  data arrival time                                                  3.91
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.50       1.50
+  u_memory/mem_reg[1][5]/CLK (DFFX1_RVT)                  0.00       1.50 r
+  library setup time                                     -0.03       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -3.91
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.45
+
+
+  Startpoint: sel_item[0]
+              (input port clocked by clk)
+  Endpoint: u_memory/mem_reg[2][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_top        8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  sel_item[0] (in)                                        0.01       3.01 r
+  U272/Y (INVX0_RVT)                                      0.04       3.06 f
+  U273/Y (NOR2X0_RVT)                                     0.07       3.13 r
+  U276/Y (AO21X1_RVT)                                     0.06       3.19 r
+  U280/Y (OR3X1_RVT)                                      0.06       3.25 r
+  U298/Y (OR2X1_RVT)                                      0.06       3.31 r
+  U299/Y (OR2X1_RVT)                                      0.05       3.36 r
+  U300/Y (OR2X1_RVT)                                      0.05       3.41 r
+  U306/Y (NOR2X0_RVT)                                     0.07       3.48 f
+  U313/Y (AND2X1_RVT)                                     0.05       3.53 f
+  U315/Y (OR2X1_RVT)                                      0.05       3.57 f
+  U325/Y (OR2X1_RVT)                                      0.05       3.62 f
+  U326/Y (INVX0_RVT)                                      0.03       3.65 r
+  U327/Y (AND2X1_RVT)                                     0.04       3.69 r
+  U328/Y (NOR2X2_RVT)                                     0.07       3.75 f
+  U160/Y (OR2X2_RVT)                                      0.05       3.81 f
+  U355/Y (INVX1_RVT)                                      0.04       3.84 r
+  U356/Y (AO22X1_RVT)                                     0.06       3.90 r
+  u_memory/mem_reg[2][3]/D (DFFX1_RVT)                    0.01       3.91 r
+  data arrival time                                                  3.91
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.50       1.50
+  u_memory/mem_reg[2][3]/CLK (DFFX1_RVT)                  0.00       1.50 r
+  library setup time                                     -0.03       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -3.91
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.45
+
+
+  Startpoint: sel_item[0]
+              (input port clocked by clk)
+  Endpoint: u_memory/mem_reg[2][4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_top        8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  sel_item[0] (in)                                        0.01       3.01 r
+  U272/Y (INVX0_RVT)                                      0.04       3.06 f
+  U273/Y (NOR2X0_RVT)                                     0.07       3.13 r
+  U276/Y (AO21X1_RVT)                                     0.06       3.19 r
+  U280/Y (OR3X1_RVT)                                      0.06       3.25 r
+  U298/Y (OR2X1_RVT)                                      0.06       3.31 r
+  U299/Y (OR2X1_RVT)                                      0.05       3.36 r
+  U300/Y (OR2X1_RVT)                                      0.05       3.41 r
+  U306/Y (NOR2X0_RVT)                                     0.07       3.48 f
+  U313/Y (AND2X1_RVT)                                     0.05       3.53 f
+  U315/Y (OR2X1_RVT)                                      0.05       3.57 f
+  U325/Y (OR2X1_RVT)                                      0.05       3.62 f
+  U326/Y (INVX0_RVT)                                      0.03       3.65 r
+  U327/Y (AND2X1_RVT)                                     0.04       3.69 r
+  U328/Y (NOR2X2_RVT)                                     0.07       3.75 f
+  U160/Y (OR2X2_RVT)                                      0.05       3.81 f
+  U355/Y (INVX1_RVT)                                      0.04       3.84 r
+  U363/Y (AO22X1_RVT)                                     0.06       3.90 r
+  u_memory/mem_reg[2][4]/D (DFFX1_RVT)                    0.01       3.91 r
+  data arrival time                                                  3.91
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.50       1.50
+  u_memory/mem_reg[2][4]/CLK (DFFX1_RVT)                  0.00       1.50 r
+  library setup time                                     -0.03       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -3.91
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.45
+
+
+  Startpoint: sel_item[0]
+              (input port clocked by clk)
+  Endpoint: u_memory/mem_reg[1][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_top        8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  sel_item[0] (in)                                        0.01       3.01 r
+  U272/Y (INVX0_RVT)                                      0.04       3.06 f
+  U273/Y (NOR2X0_RVT)                                     0.07       3.13 r
+  U276/Y (AO21X1_RVT)                                     0.06       3.19 r
+  U280/Y (OR3X1_RVT)                                      0.06       3.25 r
+  U298/Y (OR2X1_RVT)                                      0.06       3.31 r
+  U299/Y (OR2X1_RVT)                                      0.05       3.36 r
+  U300/Y (OR2X1_RVT)                                      0.05       3.41 r
+  U306/Y (NOR2X0_RVT)                                     0.07       3.48 f
+  U313/Y (AND2X1_RVT)                                     0.05       3.53 f
+  U315/Y (OR2X1_RVT)                                      0.05       3.57 f
+  U316/Y (OR2X1_RVT)                                      0.05       3.62 f
+  U321/Y (INVX0_RVT)                                      0.03       3.65 r
+  U322/Y (AND2X1_RVT)                                     0.04       3.69 r
+  U323/Y (NOR2X2_RVT)                                     0.07       3.75 f
+  U161/Y (OR2X2_RVT)                                      0.05       3.81 f
+  U353/Y (INVX1_RVT)                                      0.04       3.84 r
+  U354/Y (AO22X1_RVT)                                     0.06       3.90 r
+  u_memory/mem_reg[1][3]/D (DFFX1_RVT)                    0.01       3.91 r
+  data arrival time                                                  3.91
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.50       1.50
+  u_memory/mem_reg[1][3]/CLK (DFFX1_RVT)                  0.00       1.50 r
+  library setup time                                     -0.03       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -3.91
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.45
+
+
+  Startpoint: sel_item[0]
+              (input port clocked by clk)
+  Endpoint: u_memory/mem_reg[1][4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_top        8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  sel_item[0] (in)                                        0.01       3.01 r
+  U272/Y (INVX0_RVT)                                      0.04       3.06 f
+  U273/Y (NOR2X0_RVT)                                     0.07       3.13 r
+  U276/Y (AO21X1_RVT)                                     0.06       3.19 r
+  U280/Y (OR3X1_RVT)                                      0.06       3.25 r
+  U298/Y (OR2X1_RVT)                                      0.06       3.31 r
+  U299/Y (OR2X1_RVT)                                      0.05       3.36 r
+  U300/Y (OR2X1_RVT)                                      0.05       3.41 r
+  U306/Y (NOR2X0_RVT)                                     0.07       3.48 f
+  U313/Y (AND2X1_RVT)                                     0.05       3.53 f
+  U315/Y (OR2X1_RVT)                                      0.05       3.57 f
+  U316/Y (OR2X1_RVT)                                      0.05       3.62 f
+  U321/Y (INVX0_RVT)                                      0.03       3.65 r
+  U322/Y (AND2X1_RVT)                                     0.04       3.69 r
+  U323/Y (NOR2X2_RVT)                                     0.07       3.75 f
+  U161/Y (OR2X2_RVT)                                      0.05       3.81 f
+  U353/Y (INVX1_RVT)                                      0.04       3.84 r
+  U362/Y (AO22X1_RVT)                                     0.06       3.90 r
+  u_memory/mem_reg[1][4]/D (DFFX1_RVT)                    0.01       3.91 r
+  data arrival time                                                  3.91
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.50       1.50
+  u_memory/mem_reg[1][4]/CLK (DFFX1_RVT)                  0.00       1.50 r
+  library setup time                                     -0.03       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -3.91
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.45
+
+
+  Startpoint: sel_item[0]
+              (input port clocked by clk)
+  Endpoint: u_memory/mem_reg[2][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_top        8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  sel_item[0] (in)                                        0.01       3.01 r
+  U272/Y (INVX0_RVT)                                      0.04       3.06 f
+  U273/Y (NOR2X0_RVT)                                     0.07       3.13 r
+  U276/Y (AO21X1_RVT)                                     0.06       3.19 r
+  U280/Y (OR3X1_RVT)                                      0.06       3.25 r
+  U298/Y (OR2X1_RVT)                                      0.06       3.31 r
+  U299/Y (OR2X1_RVT)                                      0.05       3.36 r
+  U300/Y (OR2X1_RVT)                                      0.05       3.41 r
+  U306/Y (NOR2X0_RVT)                                     0.07       3.48 f
+  U313/Y (AND2X1_RVT)                                     0.05       3.53 f
+  U315/Y (OR2X1_RVT)                                      0.05       3.57 f
+  U325/Y (OR2X1_RVT)                                      0.05       3.62 f
+  U326/Y (INVX0_RVT)                                      0.03       3.65 r
+  U327/Y (AND2X1_RVT)                                     0.04       3.69 r
+  U328/Y (NOR2X2_RVT)                                     0.07       3.75 f
+  U220/Y (INVX2_RVT)                                      0.06       3.82 r
+  U329/Y (MUX21X1_RVT)                                    0.07       3.89 r
+  u_memory/mem_reg[2][0]/D (DFFX1_RVT)                    0.01       3.90 r
+  data arrival time                                                  3.90
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.50       1.50
+  u_memory/mem_reg[2][0]/CLK (DFFX1_RVT)                  0.00       1.50 r
+  library setup time                                     -0.03       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -3.90
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.43
+
+
+  Startpoint: sel_item[0]
+              (input port clocked by clk)
+  Endpoint: u_memory/mem_reg[2][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_top        8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  sel_item[0] (in)                                        0.01       3.01 r
+  U272/Y (INVX0_RVT)                                      0.04       3.06 f
+  U273/Y (NOR2X0_RVT)                                     0.07       3.13 r
+  U276/Y (AO21X1_RVT)                                     0.06       3.19 r
+  U280/Y (OR3X1_RVT)                                      0.06       3.25 r
+  U298/Y (OR2X1_RVT)                                      0.06       3.31 r
+  U299/Y (OR2X1_RVT)                                      0.05       3.36 r
+  U300/Y (OR2X1_RVT)                                      0.05       3.41 r
+  U306/Y (NOR2X0_RVT)                                     0.07       3.48 f
+  U313/Y (AND2X1_RVT)                                     0.05       3.53 f
+  U315/Y (OR2X1_RVT)                                      0.05       3.57 f
+  U325/Y (OR2X1_RVT)                                      0.05       3.62 f
+  U326/Y (INVX0_RVT)                                      0.03       3.65 r
+  U327/Y (AND2X1_RVT)                                     0.04       3.69 r
+  U328/Y (NOR2X2_RVT)                                     0.07       3.75 f
+  U220/Y (INVX2_RVT)                                      0.06       3.82 r
+  U338/Y (MUX21X1_RVT)                                    0.07       3.89 r
+  u_memory/mem_reg[2][1]/D (DFFX1_RVT)                    0.01       3.90 r
+  data arrival time                                                  3.90
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.50       1.50
+  u_memory/mem_reg[2][1]/CLK (DFFX1_RVT)                  0.00       1.50 r
+  library setup time                                     -0.03       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -3.90
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.43
+
+
+  Startpoint: sel_item[0]
+              (input port clocked by clk)
+  Endpoint: u_memory/mem_reg[1][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_top        8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  sel_item[0] (in)                                        0.01       3.01 r
+  U272/Y (INVX0_RVT)                                      0.04       3.06 f
+  U273/Y (NOR2X0_RVT)                                     0.07       3.13 r
+  U276/Y (AO21X1_RVT)                                     0.06       3.19 r
+  U280/Y (OR3X1_RVT)                                      0.06       3.25 r
+  U298/Y (OR2X1_RVT)                                      0.06       3.31 r
+  U299/Y (OR2X1_RVT)                                      0.05       3.36 r
+  U300/Y (OR2X1_RVT)                                      0.05       3.41 r
+  U306/Y (NOR2X0_RVT)                                     0.07       3.48 f
+  U313/Y (AND2X1_RVT)                                     0.05       3.53 f
+  U315/Y (OR2X1_RVT)                                      0.05       3.57 f
+  U316/Y (OR2X1_RVT)                                      0.05       3.62 f
+  U321/Y (INVX0_RVT)                                      0.03       3.65 r
+  U322/Y (AND2X1_RVT)                                     0.04       3.69 r
+  U323/Y (NOR2X2_RVT)                                     0.07       3.75 f
+  U219/Y (INVX2_RVT)                                      0.06       3.82 r
+  U346/Y (MUX21X1_RVT)                                    0.07       3.89 r
+  u_memory/mem_reg[1][2]/D (DFFX1_RVT)                    0.01       3.90 r
+  data arrival time                                                  3.90
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.50       1.50
+  u_memory/mem_reg[1][2]/CLK (DFFX1_RVT)                  0.00       1.50 r
+  library setup time                                     -0.03       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -3.90
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.43
+
+
+  Startpoint: sel_item[0]
+              (input port clocked by clk)
+  Endpoint: u_memory/mem_reg[1][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vending_top        8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  sel_item[0] (in)                                        0.01       3.01 r
+  U272/Y (INVX0_RVT)                                      0.04       3.06 f
+  U273/Y (NOR2X0_RVT)                                     0.07       3.13 r
+  U276/Y (AO21X1_RVT)                                     0.06       3.19 r
+  U280/Y (OR3X1_RVT)                                      0.06       3.25 r
+  U298/Y (OR2X1_RVT)                                      0.06       3.31 r
+  U299/Y (OR2X1_RVT)                                      0.05       3.36 r
+  U300/Y (OR2X1_RVT)                                      0.05       3.41 r
+  U306/Y (NOR2X0_RVT)                                     0.07       3.48 f
+  U313/Y (AND2X1_RVT)                                     0.05       3.53 f
+  U315/Y (OR2X1_RVT)                                      0.05       3.57 f
+  U316/Y (OR2X1_RVT)                                      0.05       3.62 f
+  U321/Y (INVX0_RVT)                                      0.03       3.65 r
+  U322/Y (AND2X1_RVT)                                     0.04       3.69 r
+  U323/Y (NOR2X2_RVT)                                     0.07       3.75 f
+  U219/Y (INVX2_RVT)                                      0.06       3.82 r
+  U324/Y (MUX21X1_RVT)                                    0.07       3.89 r
+  u_memory/mem_reg[1][0]/D (DFFX2_RVT)                    0.01       3.90 r
+  data arrival time                                                  3.90
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.50       1.50
+  u_memory/mem_reg[1][0]/CLK (DFFX2_RVT)                  0.00       1.50 r
+  library setup time                                     -0.03       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -3.90
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.43
+
+
+1

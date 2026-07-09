@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : vending_top
+Version: X-2025.06-SP2
+Date   : Thu Jul  9 13:24:48 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /home/xmen-aluno/Downloads/grupo_NN_vending/synth/libs/saed32rvt_tt1p05v25c.db)
+
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+vending_top            8000              saed32rvt_tt1p05v25c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  35.2038 uW   (97%)
+  Net Switching Power  =   1.0078 uW    (3%)
+                         ---------
+Total Dynamic Power    =  36.2116 uW  (100%)
+
+Cell Leakage Power     =  77.7752 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network     33.4637            0.0000            0.0000           33.4637  (  29.36%)  i
+register           0.3414            0.2284        5.2403e+07           52.9723  (  46.47%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      1.3987            0.7794        2.5373e+07           27.5507  (  24.17%)
+--------------------------------------------------------------------------------------------------
+Total             35.2038 uW         1.0078 uW     7.7775e+07 pW       113.9868 uW
+1
