@@ -13,7 +13,7 @@ ucli.key
 *.key
 
 # Logs e arquivos temporários de simulação
-*.log
+#*.log
 .vlogan*
 novas*
 verdi*
