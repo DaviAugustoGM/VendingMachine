@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : compile_options
+Design : vending_top
+Version: X-2025.06-SP2
+Date   : Fri Aug 21 14:49:17 2026
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+vending_top                              flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         fix_multiple_port_nets feedthroughs
+                                                                constants
+                                                                outputs
+                                                                buffer_constants
+                                         isolate_port           disabled
+                                         multibit_options
+                                           optimization_mode    non_timing_driven
+                                           minimum_width        2
+                                           exclude_registers_with_timing_exceptions false
+
+credit_reg                               flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+memory                                   flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+comparator                               flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+subtractor                               flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+control_unit                             flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+--------------------------------------------------------------------------------
+1

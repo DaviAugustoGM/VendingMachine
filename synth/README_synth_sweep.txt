@@ -1,25 +1,25 @@
-Automação da síntese
+Sweep de síntese lógica reutilizável.
 
-Arquivo principal:
-  synth/synth_sweep.tcl
+Documentação principal:
+  synth/README.md
 
-Como usar:
-  1) Copie synth_sweep.tcl para a pasta synth/ do projeto.
-  2) Garanta que synth/dc_setup.tcl exista.
-  3) Rode a partir da raiz do projeto:
+Exemplo de 5 sínteses:
+  make sweep PRESET=timing PERIODS="20 16 12 8 6" MODES="no_autoungroup"
 
-     dc_shell -f synth/synth_sweep.tcl
+Por default ENABLE_SWEEP_DDC_REUSE=true:
+  1) analyze/elaborate/link/check_design uma vez
+  2) salva synth/work/sweep_cache/<preset>/<top>_unmapped.ddc
+  3) cada ponto usa read_ddc + novas constraints + compile
 
-O script testa:
-  - Períodos: 20, 18, 16, 14, 12, 10, 8, 6, 4 e 2 ns.
-  - Modo 1: compile_ultra -no_autoungroup.
-  - Modo 2: compile_ultra.
+Para desabilitar o reuso, sobrescreva em features.tcl:
+  set ENABLE_SWEEP_DDC_REUSE false
 
-Resultados:
-  synth/runs/summary.csv
-  synth/runs/P20_no_autoungroup/reports/
-  synth/runs/P20_autoungroup/reports/
-  etc.
+Power com atividade real:
+  make sweep PRESET=power PERIODS="20 16 12 8 6" \
+    MODES="no_autoungroup" SAIF=sim/vending.saif SAIF_INSTANCE=tb_vending/dut
 
-O CSV traz:
-  period_ns, frequency_mhz, mode, slack_ns, area, timing_status
+Cada run:
+  synth/runs/<preset>/P<periodo>_<modo>/
+
+O summary.csv consolida setup, hold, área, potência, runtime, DRC e QoR status.
+O arquivo synth/synth_sweep.tcl é somente wrapper de compatibilidade.

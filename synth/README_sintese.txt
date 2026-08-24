@@ -1,38 +1,29 @@
-Arquivos corrigidos para síntese da Vending Machine
+A síntese lógica foi reorganizada como framework reutilizável.
 
-Coloque a pasta synth/ na raiz do projeto, ficando assim:
+Documentação principal:
+  synth/README.md
 
-grupo_NN_vending/
-├── rtl/
-│   ├── vending_pkg.sv
-│   ├── credit_reg.sv
-│   ├── memory.sv
-│   ├── comparator.sv
-│   ├── subtractor.sv
-│   ├── control_unit.sv
-│   └── vending_top.sv
-├── sim/
-└── synth/
-    ├── dc_setup.tcl
-    ├── .synopsys_dc.setup
-    ├── vending.sdc
-    ├── synth.tcl
-    ├── reports/
-    ├── results/
-    └── libs/
+Comandos recomendados:
+  make presets
+  make synth
+  make synth PRESET=timing PERIOD=8
+  make synth PRESET=aggressive_timing PERIOD=8
+  make synth PRESET=area
+  make synth PRESET=power
+  make synth PRESET=power SAIF=sim/vending.saif SAIF_INSTANCE=tb_vending/dut
 
-Como rodar:
+Min/max opcional:
+  # em features.tcl: ENABLE_MIN_MAX_LIBS=true
+  SAED32_MIN_LIB=/path/fast.db make synth MAX_OPCOND=WORST MIN_OPCOND=BEST
 
-1) Coloque a biblioteca saed32rvt_tt1p05v25c.db em:
-   - grupo_NN_vending/libs/
-   ou
-   - grupo_NN_vending/synth/libs/
+Fluxo real:
+  synth/flow.tcl
 
-2) Execute a partir da raiz do projeto:
+Presets:
+  default, fast, timing, aggressive_timing, area, power
 
-   dc_shell -f synth/synth.tcl
+Overrides manuais:
+  synth/features.tcl
 
-Observação:
-- Use synth/synth.tcl.
-- Não use synthesize.tcl antigo, porque ele estava configurado para outro projeto.
-- O arquivo vending.sdc usa clock inicial de 20 ns, uncertainty de 0,5 ns e delays de 3 ns, como a atividade pede.
+O aggressive_timing executa -retime exatamente uma vez por run e exige SVF.
+O arquivo synth/synth.tcl é somente wrapper de compatibilidade.

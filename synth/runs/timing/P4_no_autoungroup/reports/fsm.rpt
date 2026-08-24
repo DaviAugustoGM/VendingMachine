@@ -1,0 +1,33 @@
+ 
+****************************************
+Report : FSM
+Design : vending_top
+Version: X-2025.06-SP2
+Date   : Fri Aug 21 14:49:40 2026
+****************************************
+
+Design : control_unit
+Filename : /home/xmen-aluno/Desktop/VendingMachine-10of10/rtl/control_unit.sv
+Clock             : u_control_unit/clk  
+Asynchronous Reset: Unspecified
+
+
+Current Encoding (length/style)     : 3 / binary
+State Vector: { current_state_reg[2] current_state_reg[1] current_state_reg[0] }
+
+
+FSM_COMPLETE : FALSE
+Re-Encoding style     : NONE
+
+
+State Encodings and Order: 
+
+IDLE       : 000
+COLLECT    : 001
+CHECK      : 010
+DISPENSE   : 011
+CHANGE     : 100
+ERROR      : 101
+Default Next State : IDLE
+
+1

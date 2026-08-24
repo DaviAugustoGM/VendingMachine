@@ -1,7 +1,12 @@
-# Adicione estes alvos ao Makefile
-
-synth:
-	dc_shell -f synth/synth.tcl
-
-synth-sweep:
-	dc_shell -f synth/synth_sweep.tcl | tee synth/synth_sweep.log
+# Targets já incorporados ao Makefile da raiz:
+#
+#   make presets
+#   make synth
+#   make synth PRESET=timing PERIOD=8
+#   make synth PRESET=aggressive_timing PERIOD=8 MODE=autoungroup
+#   make synth PRESET=power SAIF=sim/vending.saif SAIF_INSTANCE=tb/dut
+#   make sweep PRESET=timing PERIODS="20 16 12 8 6" MODES="no_autoungroup"
+#   make sweep PRESET=area PERIODS="20 16 12 8 6" MODES="no_autoungroup"
+#   make sweep PRESET=power PERIODS="20 16 12 8 6" MODES="no_autoungroup"
+#   make collect_synth
+#   make clean_synth

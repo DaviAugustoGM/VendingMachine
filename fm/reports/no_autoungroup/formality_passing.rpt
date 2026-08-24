@@ -1,0 +1,255 @@
+**************************************************
+Report         : passing_points
+
+Reference      : r:/WORK/vending_top
+Implementation : i:/WORK/vending_top
+Version        : X-2025.06-SP3
+Date           : Fri Aug 21 15:39:14 2026
+**************************************************
+
+73 Passing compare points:
+
+  Ref  DFF        r:/WORK/vending_top/change_out_reg_0_
+  Impl DFF        i:/WORK/vending_top/change_out_reg_0_
+
+  Ref  DFF        r:/WORK/vending_top/change_out_reg_1_
+  Impl DFF        i:/WORK/vending_top/change_out_reg_1_
+
+  Ref  DFF        r:/WORK/vending_top/change_out_reg_2_
+  Impl DFF        i:/WORK/vending_top/change_out_reg_2_
+
+  Ref  DFF        r:/WORK/vending_top/change_out_reg_3_
+  Impl DFF        i:/WORK/vending_top/change_out_reg_3_
+
+  Ref  DFF        r:/WORK/vending_top/change_out_reg_4_
+  Impl DFF        i:/WORK/vending_top/change_out_reg_4_
+
+  Ref  DFF        r:/WORK/vending_top/change_out_reg_5_
+  Impl DFF        i:/WORK/vending_top/change_out_reg_5_
+
+  Ref  DFF        r:/WORK/vending_top/change_out_reg_6_
+  Impl DFF        i:/WORK/vending_top/change_out_reg_6_
+
+  Ref  DFF        r:/WORK/vending_top/change_out_reg_7_
+  Impl DFF        i:/WORK/vending_top/change_out_reg_7_
+
+  Ref  DFF        r:/WORK/vending_top/u_control_unit/check_wait_reg
+  Impl DFF        i:/WORK/vending_top/u_control_unit/check_wait_reg
+
+  Ref  DFF        r:/WORK/vending_top/u_control_unit/current_state_reg_0_
+  Impl DFF        i:/WORK/vending_top/u_control_unit/current_state_reg_0_
+
+  Ref  DFF        r:/WORK/vending_top/u_control_unit/current_state_reg_1_
+  Impl DFF        i:/WORK/vending_top/u_control_unit/current_state_reg_1_
+
+  Ref  DFF        r:/WORK/vending_top/u_control_unit/current_state_reg_2_
+  Impl DFF        i:/WORK/vending_top/u_control_unit/current_state_reg_2_
+
+  Ref  DFF        r:/WORK/vending_top/u_credit_reg/credit_reg_0_
+  Impl DFF        i:/WORK/vending_top/u_credit_reg/credit_reg_0_
+
+  Ref  DFF        r:/WORK/vending_top/u_credit_reg/credit_reg_1_
+  Impl DFF        i:/WORK/vending_top/u_credit_reg/credit_reg_1_
+
+  Ref  DFF        r:/WORK/vending_top/u_credit_reg/credit_reg_2_
+  Impl DFF        i:/WORK/vending_top/u_credit_reg/credit_reg_2_
+
+  Ref  DFF        r:/WORK/vending_top/u_credit_reg/credit_reg_3_
+  Impl DFF        i:/WORK/vending_top/u_credit_reg/credit_reg_3_
+
+  Ref  DFF        r:/WORK/vending_top/u_credit_reg/credit_reg_4_
+  Impl DFF        i:/WORK/vending_top/u_credit_reg/credit_reg_4_
+
+  Ref  DFF        r:/WORK/vending_top/u_credit_reg/credit_reg_5_
+  Impl DFF        i:/WORK/vending_top/u_credit_reg/credit_reg_5_
+
+  Ref  DFF        r:/WORK/vending_top/u_credit_reg/credit_reg_6_
+  Impl DFF        i:/WORK/vending_top/u_credit_reg/credit_reg_6_
+
+  Ref  DFF        r:/WORK/vending_top/u_credit_reg/credit_reg_7_
+  Impl DFF        i:/WORK/vending_top/u_credit_reg/credit_reg_7_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_0__0_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_0__0_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_0__1_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_0__1_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_0__2_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_0__2_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_0__3_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_0__3_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_0__4_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_0__4_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_1__0_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_1__0_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_1__1_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_1__1_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_1__2_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_1__2_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_1__3_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_1__3_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_1__4_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_1__4_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_2__0_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_2__0_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_2__1_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_2__1_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_2__2_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_2__2_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_2__3_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_2__3_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_2__4_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_2__4_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_3__0_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_3__0_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_3__1_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_3__1_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_3__2_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_3__2_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_3__3_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_3__3_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/mem_reg_3__4_
+  Impl DFF        i:/WORK/vending_top/u_memory/mem_reg_3__4_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/price_reg_0_
+  Impl DFF        i:/WORK/vending_top/u_memory/price_reg_0_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/price_reg_1_
+  Impl DFF        i:/WORK/vending_top/u_memory/price_reg_1_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/price_reg_2_
+  Impl DFF        i:/WORK/vending_top/u_memory/price_reg_2_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/price_reg_3_
+  Impl DFF        i:/WORK/vending_top/u_memory/price_reg_3_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/price_reg_4_
+  Impl DFF        i:/WORK/vending_top/u_memory/price_reg_4_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/price_reg_5_
+  Impl DFF        i:/WORK/vending_top/u_memory/price_reg_5_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/price_reg_6_
+  Impl DFF        i:/WORK/vending_top/u_memory/price_reg_6_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/stock_reg_0_
+  Impl DFF        i:/WORK/vending_top/u_memory/stock_reg_0_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/stock_reg_1_
+  Impl DFF        i:/WORK/vending_top/u_memory/stock_reg_1_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/stock_reg_2_
+  Impl DFF        i:/WORK/vending_top/u_memory/stock_reg_2_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/stock_reg_3_
+  Impl DFF        i:/WORK/vending_top/u_memory/stock_reg_3_
+
+  Ref  DFF        r:/WORK/vending_top/u_memory/stock_reg_4_
+  Impl DFF        i:/WORK/vending_top/u_memory/stock_reg_4_
+
+  Ref  Port       r:/WORK/vending_top/change_out[0]
+  Impl Port       i:/WORK/vending_top/change_out[0]
+
+  Ref  Port       r:/WORK/vending_top/change_out[1]
+  Impl Port       i:/WORK/vending_top/change_out[1]
+
+  Ref  Port       r:/WORK/vending_top/change_out[2]
+  Impl Port       i:/WORK/vending_top/change_out[2]
+
+  Ref  Port       r:/WORK/vending_top/change_out[3]
+  Impl Port       i:/WORK/vending_top/change_out[3]
+
+  Ref  Port       r:/WORK/vending_top/change_out[4]
+  Impl Port       i:/WORK/vending_top/change_out[4]
+
+  Ref  Port       r:/WORK/vending_top/change_out[5]
+  Impl Port       i:/WORK/vending_top/change_out[5]
+
+  Ref  Port       r:/WORK/vending_top/change_out[6]
+  Impl Port       i:/WORK/vending_top/change_out[6]
+
+  Ref  Port       r:/WORK/vending_top/change_out[7]
+  Impl Port       i:/WORK/vending_top/change_out[7]
+
+  Ref  Port       r:/WORK/vending_top/dispense
+  Impl Port       i:/WORK/vending_top/dispense
+
+  Ref  Port       r:/WORK/vending_top/display[0]
+  Impl Port       i:/WORK/vending_top/display[0]
+
+  Ref  Port       r:/WORK/vending_top/display[1]
+  Impl Port       i:/WORK/vending_top/display[1]
+
+  Ref  Port       r:/WORK/vending_top/display[2]
+  Impl Port       i:/WORK/vending_top/display[2]
+
+  Ref  Port       r:/WORK/vending_top/display[3]
+  Impl Port       i:/WORK/vending_top/display[3]
+
+  Ref  Port       r:/WORK/vending_top/display[4]
+  Impl Port       i:/WORK/vending_top/display[4]
+
+  Ref  Port       r:/WORK/vending_top/display[5]
+  Impl Port       i:/WORK/vending_top/display[5]
+
+  Ref  Port       r:/WORK/vending_top/display[6]
+  Impl Port       i:/WORK/vending_top/display[6]
+
+  Ref  Port       r:/WORK/vending_top/display[7]
+  Impl Port       i:/WORK/vending_top/display[7]
+
+  Ref  Port       r:/WORK/vending_top/error
+  Impl Port       i:/WORK/vending_top/error
+
+  Ref  Port       r:/WORK/vending_top/state_out[0]
+  Impl Port       i:/WORK/vending_top/state_out[0]
+
+  Ref  Port       r:/WORK/vending_top/state_out[1]
+  Impl Port       i:/WORK/vending_top/state_out[1]
+
+  Ref  Port       r:/WORK/vending_top/state_out[2]
+  Impl Port       i:/WORK/vending_top/state_out[2]
+
+ [BBNet: multiply-driven net
+  BBPin: black-box pin
+  Cut:   cut-point
+  DFF:   non-constant DFF register
+  DFF0:  constant 0 DFF register
+  DFF1:  constant 1 DFF register
+  DFFX:  constant X DFF register
+  DFF0X: constrained 0X DFF register
+  DFF1X: constrained 1X DFF register
+  LAT:   non-constant latch register
+  LAT0:  constant 0 latch register
+  LAT1:  constant 1 latch register
+  LATX:  constant X latch register
+  LAT0X: constrained 0X latch register
+  LAT1X: constrained 1X latch register
+  LATCG: clock-gating latch register
+  TLA:   transparent latch register
+  TLA0X: transparent constrained 0X latch register
+  TLA1X: transparent constrained 1X latch register
+  Loop:  cycle break point
+  Port:  primary (top-level) port
+  Und:   undriven signal cut-point
+  Unk:   unknown signal cut-point]
+
+1

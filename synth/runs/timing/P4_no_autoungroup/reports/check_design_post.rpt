@@ -1,0 +1,38 @@
+ 
+****************************************
+check_design summary:
+Version:     X-2025.06-SP2
+Date:        Fri Aug 21 14:49:40 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     10
+    Unconnected ports (LINT-28)                                    10
+
+Cells                                                               8
+    Nets connected to multiple pins on same cell (LINT-33)          2
+    Hier pins without driver and load (LINT-60)                     6
+--------------------------------------------------------------------------------
+
+Warning: In design 'credit_reg', port 'coin_value[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'memory', port 'price[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'memory', port 'stock[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'memory', port 'stock[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'memory', port 'stock[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'price[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'stock[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'stock[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'stock[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'subtractor', port 'price[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'vending_top', the same net is connected to more than one pin on submodule 'u_credit_reg'. (LINT-33)
+   Net 'coin_value[6]' is connected to pins 'coin_value[6]', 'coin_value[2]''.
+Warning: In design 'vending_top', the same net is connected to more than one pin on submodule 'u_credit_reg'. (LINT-33)
+   Net 'coin_value[3]' is connected to pins 'coin_value[3]', 'coin_value[0]''.
+Warning: In design 'vending_top', input pin 'coin_value[7]' of hierarchical cell 'u_credit_reg' has no internal loads and is not connected to any nets. (LINT-60)
+Warning: In design 'vending_top', input pin 'price[7]' of hierarchical cell 'u_comparator' has no internal loads and is not connected to any nets. (LINT-60)
+Warning: In design 'vending_top', input pin 'stock[7]' of hierarchical cell 'u_comparator' has no internal loads and is not connected to any nets. (LINT-60)
+Warning: In design 'vending_top', input pin 'stock[6]' of hierarchical cell 'u_comparator' has no internal loads and is not connected to any nets. (LINT-60)
+Warning: In design 'vending_top', input pin 'stock[5]' of hierarchical cell 'u_comparator' has no internal loads and is not connected to any nets. (LINT-60)
+Warning: In design 'vending_top', input pin 'price[7]' of hierarchical cell 'u_subtractor' has no internal loads and is not connected to any nets. (LINT-60)
+1

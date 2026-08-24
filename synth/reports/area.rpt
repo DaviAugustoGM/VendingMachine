@@ -3,31 +3,31 @@
 Report : area
 Design : vending_top
 Version: X-2025.06-SP2
-Date   : Thu Jul  9 13:03:41 2026
+Date   : Fri Aug 21 14:44:32 2026
 ****************************************
 
 Information: Updating design information... (UID-85)
 Library(s) Used:
 
-    saed32rvt_tt1p05v25c (File: /home/xmen-aluno/Downloads/grupo_NN_vending/synth/libs/saed32rvt_tt1p05v25c.db)
+    saed32rvt_tt1p05v25c (File: /home/xmen-aluno/Desktop/VendingMachine-10of10/synth/libs/saed32rvt_tt1p05v25c.db)
 
 Number of ports:                          138
-Number of nets:                           386
-Number of cells:                          272
-Number of combinational cells:            209
+Number of nets:                           392
+Number of cells:                          278
+Number of combinational cells:            215
 Number of sequential cells:                52
 Number of macros/black boxes:               0
-Number of buf/inv:                         52
-Number of references:                      15
+Number of buf/inv:                         58
+Number of references:                      17
 
-Combinational area:                494.055941
-Buf/Inv area:                       66.077440
+Combinational area:                503.459269
+Buf/Inv area:                       75.480768
 Noncombinational area:             344.110987
 Macro/Black Box area:                0.000000
-Net Interconnect area:             153.461248
+Net Interconnect area:             154.297669
 
-Total cell area:                   838.166928
-Total area:                        991.628175
+Total cell area:                   847.570256
+Total area:                       1001.867925
 
 Hierarchical area distribution
 ------------------------------
@@ -37,13 +37,13 @@ Hierarchical area distribution
 Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
                                   Total      Total    national  national   boxes   Design
 --------------------------------  ---------  -------  --------  ---------  ------  ------------
-vending_top                        838.1669    100.0   51.5912    52.8620  0.0000  vending_top
+vending_top                        847.5703    100.0   57.6907    52.8620  0.0000  vending_top
 u_comparator                        40.4089      4.8   40.4089     0.0000  0.0000  comparator
-u_control_unit                      82.0885      9.8   55.1492    26.9393  0.0000  control_unit
-u_credit_reg                       157.5693     18.8  104.7073    52.8620  0.0000  credit_reg
-u_memory                           398.7519     47.6  187.3041   211.4478  0.0000  memory
+u_control_unit                      84.1217      9.9   57.1824    26.9393  0.0000  control_unit
+u_credit_reg                       157.5693     18.6  104.7073    52.8620  0.0000  credit_reg
+u_memory                           400.0227     47.2  188.5748   211.4478  0.0000  memory
 u_subtractor                        54.8951      6.5   54.8951     0.0000  0.0000  subtractor
 --------------------------------  ---------  -------  --------  ---------  ------  ------------
-Total                                                 494.0559   344.1110  0.0000
+Total                                                 503.4593   344.1110  0.0000
 
 1

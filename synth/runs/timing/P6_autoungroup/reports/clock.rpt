@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : clocks
+Design : vending_top
+Version: X-2025.06-SP2
+Date   : Fri Aug 21 14:55:51 2026
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk              6.00   {0 3}                         {clk}
+--------------------------------------------------------------------------------
+1

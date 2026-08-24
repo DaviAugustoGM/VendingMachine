@@ -1,0 +1,37 @@
+ 
+****************************************
+Report : resources
+Design : vending_top
+Version: X-2025.06-SP2
+Date   : Fri Aug 21 14:56:05 2026
+****************************************
+
+
+Resource Report for this hierarchy in file
+        /home/xmen-aluno/Desktop/VendingMachine-10of10/rtl/vending_top.sv
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_5        | DW01_add       | width=8    | u_credit_reg/add_17 (credit_reg.sv:17) |
+| gt_x_10        | DW_cmp         | width=8    | u_memory/gt_31 (memory.sv:31) |
+| sub_x_11       | DW01_dec       | width=8    | u_memory/sub_32 (memory.sv:32) |
+| gte_x_19       | DW_cmp         | width=8    | u_comparator/gte_10 (comparator.sv:10) |
+| gt_x_20        | DW_cmp         | width=8    | u_comparator/gt_10 (comparator.sv:10) |
+| sub_x_21       | DW01_sub       | width=8    | u_subtractor/sub_9 (subtractor.sv:9) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_5            | DW01_add         | pparch (area,speed)                 |
+| gt_x_10            | DW_cmp           | apparch (area)     |                |
+| sub_x_11           | DW01_dec         | apparch (area)     |                |
+| gte_x_19           | DW_cmp           | apparch (area)     |                |
+| gt_x_20            | DW_cmp           | apparch (area)     |                |
+| sub_x_21           | DW01_sub         | apparch (area)     |                |
+===============================================================================
+
+1

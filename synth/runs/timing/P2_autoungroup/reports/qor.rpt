@@ -1,0 +1,84 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : qor
+Design : vending_top
+Version: X-2025.06-SP2
+Date   : Fri Aug 21 14:56:05 2026
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:               9.00
+  Critical Path Length:          0.58
+  Critical Path Slack:          -2.10
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:       -144.10
+  No. of Violating Paths:       78.00
+  Worst Hold Violation:         -0.36
+  Total Hold Violation:        -19.36
+  No. of Hold Violations:       57.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                367
+  Buf/Inv Cell Count:              60
+  Buf Cell Count:                   6
+  Inv Cell Count:                  54
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       310
+  Sequential Cell Count:           57
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      723.293830
+  Noncombinational Area:   376.641420
+  Buf/Inv Area:             81.071937
+  Total Buffer Area:            12.20
+  Total Inverter Area:          68.87
+  Macro/Black Box Area:      0.000000
+  Net Area:                190.207674
+  -----------------------------------
+  Cell Area:              1099.935250
+  Design Area:            1290.142924
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           402
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: xmen29
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.00
+  Mapping Optimization:                1.76
+  -----------------------------------------
+  Overall Compile Time:                2.58
+  Overall Compile Wall Clock Time:     2.90
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 2.10  TNS: 144.10  Number of Violating Paths: 78
+
+
+  Design (Hold)  WNS: 0.36  TNS: 19.36  Number of Violating Paths: 57
+
+  --------------------------------------------------------------------
+
+
+1

@@ -1,0 +1,6 @@
+mode=autoungroup
+top=vending_top
+target_db=/home/xmen-aluno/Desktop/Vending_machine_formality/VendingMachine-10of10/synth/libs/saed32rvt_tt1p05v25c.db
+svf=/home/xmen-aluno/Desktop/Vending_machine_formality/VendingMachine-10of10/synth/reports/default_ungrouped.svf
+netlist=/home/xmen-aluno/Desktop/Vending_machine_formality/VendingMachine-10of10/synth/vending_top_netlist_ungrouped.v
+generated_at=2026-08-21 15:30:25

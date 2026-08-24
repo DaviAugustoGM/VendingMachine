@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : area
+Design : vending_top
+Version: X-2025.06-SP2
+Date   : Fri Aug 21 14:49:52 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /home/xmen-aluno/Desktop/VendingMachine-10of10/synth/libs/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                          138
+Number of nets:                           525
+Number of cells:                          386
+Number of combinational cells:            328
+Number of sequential cells:                52
+Number of macros/black boxes:               0
+Number of buf/inv:                         86
+Number of references:                      18
+
+Combinational area:                739.559047
+Buf/Inv area:                      116.397953
+Noncombinational area:             343.602699
+Macro/Black Box area:                0.000000
+Net Interconnect area:             176.283809
+
+Total cell area:                  1083.161746
+Total area:                       1259.445556
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ------------
+vending_top                       1083.1617    100.0   77.5139    52.8620  0.0000  vending_top
+u_comparator                        36.3426      3.4   36.3426     0.0000  0.0000  comparator
+u_control_unit                     101.1493      9.3   74.7183    26.4310  0.0000  control_unit
+u_credit_reg                       235.8456     21.8  182.9837    52.8620  0.0000  credit_reg
+u_memory                           524.5532     48.4  313.1054   211.4478  0.0000  memory
+u_subtractor                        54.8951      5.1   54.8951     0.0000  0.0000  subtractor
+--------------------------------  ---------  -------  --------  ---------  ------  ------------
+Total                                                 739.5590   343.6027  0.0000
+
+1

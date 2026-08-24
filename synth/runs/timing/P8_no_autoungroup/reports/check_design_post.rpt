@@ -1,0 +1,37 @@
+ 
+****************************************
+check_design summary:
+Version:     X-2025.06-SP2
+Date:        Fri Aug 21 14:49:29 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     12
+    Unconnected ports (LINT-28)                                    12
+
+Cells                                                               8
+    Hier pins without driver and load (LINT-60)                     8
+--------------------------------------------------------------------------------
+
+Warning: In design 'credit_reg', port 'coin_value[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'credit_reg', port 'coin_value[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'credit_reg', port 'coin_value[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'memory', port 'price[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'memory', port 'stock[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'memory', port 'stock[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'memory', port 'stock[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'price[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'stock[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'stock[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'stock[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'subtractor', port 'price[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'vending_top', input pin 'coin_value[7]' of hierarchical cell 'u_credit_reg' has no internal loads and is not connected to any nets. (LINT-60)
+Warning: In design 'vending_top', input pin 'coin_value[2]' of hierarchical cell 'u_credit_reg' has no internal loads and is not connected to any nets. (LINT-60)
+Warning: In design 'vending_top', input pin 'coin_value[0]' of hierarchical cell 'u_credit_reg' has no internal loads and is not connected to any nets. (LINT-60)
+Warning: In design 'vending_top', input pin 'price[7]' of hierarchical cell 'u_comparator' has no internal loads and is not connected to any nets. (LINT-60)
+Warning: In design 'vending_top', input pin 'stock[7]' of hierarchical cell 'u_comparator' has no internal loads and is not connected to any nets. (LINT-60)
+Warning: In design 'vending_top', input pin 'stock[6]' of hierarchical cell 'u_comparator' has no internal loads and is not connected to any nets. (LINT-60)
+Warning: In design 'vending_top', input pin 'stock[5]' of hierarchical cell 'u_comparator' has no internal loads and is not connected to any nets. (LINT-60)
+Warning: In design 'vending_top', input pin 'price[7]' of hierarchical cell 'u_subtractor' has no internal loads and is not connected to any nets. (LINT-60)
+1

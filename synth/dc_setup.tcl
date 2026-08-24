@@ -1,33 +1,23 @@
 # ============================================================
-# Configuração do Synopsys Design Compiler para SAED32
-# Projeto: Vending Machine
-#
-# Use este arquivo sendo chamado por:
+# Compatibilidade com scripts antigos:
 #   source synth/dc_setup.tcl
+#
+# Carrega toda a infraestrutura mínima necessária para que o
+# arquivo de tecnologia possa usar feature_on/synth_fatal.
+# Novos fluxos devem preferir flow.tcl ou sweep.tcl.
 # ============================================================
+set _dc_setup_dir [file dirname [file normalize [info script]]]
+source [file join $_dc_setup_dir config.tcl]
+source [file join $_dc_setup_dir lib flow_utils.tcl]
+source $PRESETS_FILE
 
-# Pastas onde o Design Compiler irá procurar RTL e bibliotecas.
-# Coloque saed32rvt_tt1p05v25c.db em ./libs ou ./synth/libs,
-# ou ajuste o caminho abaixo para o local usado no laboratório.
-set search_path [concat $search_path [list . ./rtl ./synth ./libs ./synth/libs]]
+if {[catch {apply_synth_preset $SYNTH_PRESET} _preset_msg]} {
+  synth_fatal $_preset_msg
+}
 
-# Biblioteca alvo do laboratório.
-set target_library [list saed32rvt_tt1p05v25c.db]
-
-# Biblioteca DesignWare.
-set synthetic_library [list dw_foundation.sldb]
-
-# Bibliotecas usadas para link.
-set link_library [concat "*" $target_library $synthetic_library]
-
-# Biblioteca de trabalho.
-file mkdir work
-define_design_lib WORK -path ./work
-
-# Opções úteis para SystemVerilog / RTL.
-set hdlin_enable_rtl_for_iq 1
-set hdlin_check_no_latch true
-
-puts "============================================================"
-puts "Configuração SAED32 carregada para o projeto vending_top"
-puts "============================================================"
+if {![file exists $FEATURES_FILE]} {
+  synth_fatal "arquivo de features/overrides não encontrado: $FEATURES_FILE"
+}
+source $FEATURES_FILE
+validate_features
+source $TECH_SETUP_FILE

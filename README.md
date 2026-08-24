@@ -18,13 +18,18 @@ grupo_NN_vending/
 │   ├── tb_vending.sv
 │   └── run_vcs.sh
 ├── synth/
-│   ├── dc_setup.tcl
-│   ├── .synopsys_dc.setup
-│   ├── vending.sdc
-│   ├── synth.tcl
+│   ├── config.tcl
+│   ├── features.tcl
+│   ├── rtl_files.tcl
+│   ├── constraints.tcl
+│   ├── flow.tcl
+│   ├── sweep.tcl
+│   ├── tech/
+│   ├── lib/
+│   ├── scripts/
 │   ├── reports/
 │   ├── results/
-│   └── libs/
+│   └── runs/
 ├── docs/
 │   └── diagramas.rtlex
 ├── Makefile
@@ -63,7 +68,7 @@ A simulação gera `waves.fsdb`, que pode ser aberto com:
 make wave
 ```
 
-## Síntese
+## Síntese lógica
 
 Antes de rodar a síntese, coloque a biblioteca `saed32rvt_tt1p05v25c.db` em uma destas pastas:
 
@@ -78,19 +83,69 @@ Depois execute, a partir da raiz do projeto:
 make synth
 ```
 
-Os relatórios serão gerados em:
+As opções avançadas de síntese lógica podem ser ligadas/desligadas em `synth/features.tcl` usando `true`/`false`, ou selecionadas por presets.
 
-```text
-synth/reports/
+Para experimentar outro período sem editar Tcl:
+
+```bash
+make synth PERIOD=8
 ```
 
-A netlist e arquivos exportados serão gerados em:
+Também é possível usar uma cópia de configuração de features:
 
-```text
-synth/results/
+```bash
+make synth FEATURES=synth/features_timing.tcl
 ```
+
+Para executar a exploração automática de períodos e modos:
+
+```bash
+make sweep
+```
+
+Os relatórios da síntese única são gerados em `synth/reports/` e os resultados em `synth/results/`. O sweep cria uma pasta por execução em `synth/runs/` e gera `synth/runs/summary.csv` com setup, hold, área, power, runtime e status de QoR.
+
+A organização completa e as instruções para reutilizar o fluxo em outros projetos estão em `synth/README.md`.
 
 ## Observações
 
 - Arquivos gerados por simulação/síntese, como `work.lib++`, `alib-*`, `simv`, `*.fsdb` e `*.vcd`, foram removidos da entrega limpa.
 - O arquivo `docs/diagramas.rtlex` foi mantido como material de apoio dos diagramas.
+
+## Presets de síntese
+
+O fluxo de síntese lógica oferece presets configuráveis. Exemplos:
+
+```bash
+make presets
+make synth PRESET=timing
+make synth PRESET=aggressive_timing PERIOD=8 MODE=autoungroup
+make sweep PRESET=area
+make synth PRESET=power
+```
+
+Os presets ficam em `synth/presets.tcl`. Overrides manuais `true`/`false` podem ser feitos em `synth/features.tcl` e têm prioridade sobre o preset.
+
+
+### Sweep, power e min/max
+
+```bash
+make sweep PRESET=timing PERIODS="20 16 12 8 6" MODES="no_autoungroup"
+make synth PRESET=power SAIF=sim/vending.saif SAIF_INSTANCE=tb_vending/dut
+```
+
+O sweep reutiliza um DDC unmapped por padrão para não repetir `analyze/elaborate` a cada clock. O CSV consolidado inclui timing, área, power e runtime. Para análise min/max, consulte `synth/README.md`.
+
+## Verificação de equivalência formal (Formality)
+
+O projeto agora possui um fluxo dedicado de sign-off formal com SVF. Veja `fm/README.md`.
+
+Comandos principais:
+
+```bash
+make formal_synth          # gera as duas netlists e seus SVFs correspondentes
+make formal_no_autoungroup # verifica a rodada com -no_autoungroup
+make formal_autoungroup    # verifica a rodada com autoungroup
+# ou:
+make formal                # executa tudo em sequência
+```

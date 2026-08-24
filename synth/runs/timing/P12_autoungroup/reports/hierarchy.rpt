@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : hierarchy
+Design : vending_top
+Version: X-2025.06-SP2
+Date   : Fri Aug 21 14:55:39 2026
+****************************************
+
+Attributes:
+    r - licensed design
+
+vending_top        r
+    AND2X1_RVT           saed32rvt_tt1p05v25c
+    AND3X1_RVT           saed32rvt_tt1p05v25c
+    AND4X1_RVT           saed32rvt_tt1p05v25c
+    AO21X1_RVT           saed32rvt_tt1p05v25c
+    AO22X1_RVT           saed32rvt_tt1p05v25c
+    AO221X1_RVT          saed32rvt_tt1p05v25c
+    AO222X1_RVT          saed32rvt_tt1p05v25c
+    DFFSSRX1_RVT         saed32rvt_tt1p05v25c
+    FADDX1_RVT           saed32rvt_tt1p05v25c
+    HADDX1_RVT           saed32rvt_tt1p05v25c
+    INVX0_RVT            saed32rvt_tt1p05v25c
+    INVX2_RVT            saed32rvt_tt1p05v25c
+    MUX41X1_RVT          saed32rvt_tt1p05v25c
+    NAND2X0_RVT          saed32rvt_tt1p05v25c
+    NAND3X0_RVT          saed32rvt_tt1p05v25c
+    NOR2X0_RVT           saed32rvt_tt1p05v25c
+    NOR3X0_RVT           saed32rvt_tt1p05v25c
+    NOR4X1_RVT           saed32rvt_tt1p05v25c
+    OA21X1_RVT           saed32rvt_tt1p05v25c
+    OA221X1_RVT          saed32rvt_tt1p05v25c
+    OA222X1_RVT          saed32rvt_tt1p05v25c
+    OAI21X1_RVT          saed32rvt_tt1p05v25c
+    OR2X1_RVT            saed32rvt_tt1p05v25c
+1

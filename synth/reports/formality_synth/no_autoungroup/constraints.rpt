@@ -1,0 +1,82 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : vending_top
+Version: X-2025.06-SP2
+Date   : Fri Aug 21 15:30:20 2026
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   change_out_reg_0_/D          0.49           0.13 f        -0.36  (VIOLATED)
+   change_out_reg_1_/D          0.49           0.13 f        -0.36  (VIOLATED)
+   change_out_reg_2_/D          0.49           0.13 f        -0.36  (VIOLATED)
+   change_out_reg_3_/D          0.49           0.13 f        -0.36  (VIOLATED)
+   change_out_reg_4_/D          0.49           0.13 f        -0.36  (VIOLATED)
+   change_out_reg_5_/D          0.49           0.13 f        -0.36  (VIOLATED)
+   change_out_reg_6_/D          0.49           0.13 f        -0.36  (VIOLATED)
+   u_credit_reg/credit_reg_0_/D
+                                0.49           0.13 f        -0.36  (VIOLATED)
+   u_memory/mem_reg_3__0_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_1__1_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_1__3_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_1__4_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_0__1_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_0__3_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_0__4_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_2__2_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_2__3_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_2__4_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/stock_reg_4_/D      0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/stock_reg_0_/D      0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_3__2_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_3__3_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_3__4_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/stock_reg_1_/D      0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/stock_reg_2_/D      0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/stock_reg_3_/D      0.49           0.14 f        -0.35  (VIOLATED)
+   u_credit_reg/credit_reg_6_/D
+                                0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_1__0_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_0__0_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_2__0_/D     0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/price_reg_0_/D      0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/price_reg_5_/D      0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/price_reg_6_/D      0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/price_reg_2_/D      0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/price_reg_1_/D      0.49           0.14 f        -0.35  (VIOLATED)
+   change_out_reg_7_/D          0.49           0.14 f        -0.35  (VIOLATED)
+   u_memory/mem_reg_1__2_/D     0.49           0.15 f        -0.34  (VIOLATED)
+   u_memory/mem_reg_3__1_/D     0.49           0.15 f        -0.34  (VIOLATED)
+   u_memory/mem_reg_0__2_/D     0.49           0.15 f        -0.34  (VIOLATED)
+   u_memory/mem_reg_2__1_/D     0.49           0.15 f        -0.34  (VIOLATED)
+   u_memory/price_reg_4_/D      0.49           0.15 f        -0.34  (VIOLATED)
+   u_memory/price_reg_3_/D      0.49           0.15 f        -0.34  (VIOLATED)
+   u_control_unit/current_state_reg_0_/D
+                                0.49           0.18 f        -0.31  (VIOLATED)
+   u_control_unit/current_state_reg_2_/D
+                                0.49           0.18 f        -0.31  (VIOLATED)
+   u_control_unit/current_state_reg_1_/D
+                                0.49           0.19 f        -0.31  (VIOLATED)
+   u_control_unit/check_wait_reg/RSTB
+                                0.47           0.17 f        -0.30  (VIOLATED)
+   u_credit_reg/credit_reg_7_/D
+                                0.49           0.19 r        -0.29  (VIOLATED)
+   u_credit_reg/credit_reg_2_/D
+                                0.49           0.20 r        -0.28  (VIOLATED)
+   u_credit_reg/credit_reg_3_/D
+                                0.49           0.20 r        -0.28  (VIOLATED)
+   u_credit_reg/credit_reg_4_/D
+                                0.49           0.20 r        -0.28  (VIOLATED)
+   u_credit_reg/credit_reg_5_/D
+                                0.49           0.20 r        -0.28  (VIOLATED)
+   u_credit_reg/credit_reg_1_/D
+                                0.49           0.20 r        -0.28  (VIOLATED)
+
+
+1

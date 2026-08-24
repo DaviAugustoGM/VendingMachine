@@ -41,11 +41,13 @@ filenames.log
 # Ignorar apenas resultados pesados/intermediários da síntese
 synth/results/*
 synth/runs/*/results/*
+synth/summary.csv
 *.ddc
 *.svf
 
 # Mantém pastas vazias versionadas
 !synth/results/.gitkeep
+!synth/runs/.gitkeep
 
 
 # ============================================================
@@ -98,3 +100,14 @@ Thumbs.db
 .vscode/
 .idea/
 *.code-workspace
+
+# Python
+__pycache__/
+*.pyc
+
+# ============================================================
+# Formality — SVFs de sign-off devem acompanhar a entrega
+# ============================================================
+!synth/reports/default.svf
+!synth/reports/default_grouped.svf
+!synth/reports/default_ungrouped.svf
